@@ -12,11 +12,11 @@ In the next script "plot_data_and_model", we create a function that defines N by
 ### Results
 N0 was estimated by taking the intercept of the first linear model when N was small compared to K.
 
-N0 = 68691 (5 s.f.)
+N0 = 713116 (nearest whole number)
 
 r was estimated by taking the slope of the first linear model
 
-r = 1.0133 (5 s.f.)
+r = 0.006979 (7 s.f.)
 
 K was estimated by taking the intercept of the second linear model where t was sufficiently high for N to reach carrying capacity
 
@@ -24,17 +24,19 @@ K = 1e+09 (or 1000000000)
 
 
 ## Q2
-Assuming the population grows exponentially, N = N0 * e^(r * t)
+Assuming the population grows exponentially, N = N0 * exp(r * t)
 
-So when t = 4980 mins, N = 68691 * e^(1.0133*4980)
+So when t = 4980 mins, N = 713116 * exp(0.006979*4980)
 
-So N would be undefined/infinite as this number is too large to calculate conventionally?????????????
+So N would = 8.856203e+20
 
-If we assume the population grows logistically, N = (N0 * K * e^(r * t)) / (K - N0 + N0 * e^(r * t))
+If we assume the population grows logistically, N = (N0 * K * exp(r * t)) / (K - N0 + N0 * exp(r * t))
 
-So when t = 4980 mins, N = (68691 * 1e+09 * e^(1.0133* 4980)) / (1000000000 - 68691 + 68691 * e^(1.0133*4980))
+So when t = 4980 mins, N = (713116 * 1e+09 * exp(0.006979 * 4980)) / (1000000000 - 713116 + (713116 * exp(0.006979 * 4980)))
 
-So N = 
+So N = 1e+09
+
+Under exponential growth the population size is predicted to be vastly larger compared to under logistic growth (8.856203e+20 is orders of magnitude greater than 1e+09). This is because exponential growth has no limits, whereas logistic growth is limited by carrying capacity and cannot exceed K. At large values of t like 4980, N reaches K.
 
 
 ## Q3
