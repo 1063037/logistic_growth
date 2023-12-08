@@ -45,5 +45,7 @@ Figure attached below:
 
 ![image](https://github.com/1063037/logistic_growth/assets/150165336/0fccceec-d476-4d9a-98f7-af75d7e7da90)
 
+R script saved as "exponential_logistic_comparison_graph.R"
 
+Graph saved as "exponential_logistic_figure.png"
 
