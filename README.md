@@ -41,5 +41,9 @@ Under exponential growth the population size is predicted to be vastly larger co
 
 ## Q3
 
+Figure attached below:
+
+![image](https://github.com/1063037/logistic_growth/assets/150165336/f63b45c5-8f7d-48f1-ae8b-7597b59c0c33)
+
 
 
